@@ -6,9 +6,17 @@
   <div class="bg-emerald-200 dark:bg-emerald-900 dark:text-white" >sousuek</div>
 
   <div class="bg-blue-400 dark:bg-red-600">hogehogehgoe</div>
+<form action="">
 
+  <InputText v-model="text"></InputText>
+  
 
+  <div>レシピ名</div>
+  <input type="text" class="border-2"/>
+  <div>材料</div>
+  <input type="text" class="border-2"/>
 
+</form>
 
     </div>
 
@@ -22,6 +30,7 @@ const switchMode = () =>{
   mode.value =mode.value? "" :"dark";
   
 }
+const text =ref("")
 
  
 
