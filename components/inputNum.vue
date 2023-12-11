@@ -1,6 +1,6 @@
 <template>
     <div>
-        <input type="text" v-model="modelValue" class="border-2 ">
+        <input type="number" v-model="modelValue" class="border-2 ">
     </div>
 
 
@@ -10,12 +10,12 @@
 
 //親からうけとるPropsを用意
 const props = defineProps<{
-    modelValue:string
+    modelValue:""|number
 
 }>()
 //親で実行するイベントとイベント引数をemitsで用意
 const emits = defineEmits<{
-    "update:modelValue":[value:string]
+    "update:modelValue":[value:""| number]
 }>()
 
 //inputタグのmodelValueに入力される値を監視

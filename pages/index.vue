@@ -8,13 +8,12 @@
   <div class="bg-blue-400 dark:bg-red-600">hogehogehgoe</div>
 <form action="">
 
-  <InputText v-model="text"></InputText>
-  
+  <InputText v-model="text" ></InputText>
+  <InputNum v-model="num" ></InputNum>
+  <InputTextarea v-model="text" ></InputTextarea>
+   <div>tekiduto{{ text }}</div>
 
-  <div>レシピ名</div>
-  <input type="text" class="border-2"/>
-  <div>材料</div>
-  <input type="text" class="border-2"/>
+
 
 </form>
 
@@ -30,8 +29,8 @@ const switchMode = () =>{
   mode.value =mode.value? "" :"dark";
   
 }
-const text =ref("")
-
+const text =ref<string>("")
+const num =ref<""|number>("")
  
 
 
