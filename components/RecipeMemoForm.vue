@@ -6,7 +6,7 @@
         </label>
         <div v-for="(item,index) in form.items">
             <div>
-                <button @click="removeItem(index)"></button>
+                <button @click="removeItem(index)">材料削除</button>
             </div>
             <label>材料{{ index +1 }}の名前
             <InputText v-model="item.name"></InputText>
@@ -18,7 +18,7 @@
             <InputText v-model="item.unit"></InputText>
             </label>
             <div>
-                <button @click="addItem"></button>
+                <button @click="addItem">材料追加</button>
             </div>
 
 
