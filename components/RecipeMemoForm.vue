@@ -29,8 +29,7 @@
         </label>
     </div>
   
-  <InputNum v-model="num" ></InputNum>
-  <InputTextarea v-model="text" ></InputTextarea>
+
 
 </template>
 <script setup lang="ts">

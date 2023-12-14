@@ -1,5 +1,5 @@
 <template>
-   <div :class="mode">
+  <div :class="mode">
     <TheContainer>
     <div class="dark:bg-coffee">
 
@@ -19,7 +19,7 @@
     </form>
 
     </div>
-  </TheContainer>
+    </TheContainer>
   </div>
 </template>
 
@@ -32,7 +32,7 @@ const switchMode = () =>{
 }
 const text =ref<string>("")
 const num =ref<""|number>("")
- 
+console.log(useRoute())
 
 
 </script>
