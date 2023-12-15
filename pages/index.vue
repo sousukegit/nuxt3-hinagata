@@ -1,28 +1,29 @@
 <template>
-  <div :class="mode">
+  
     
-    <TheContainer>
-    <Thebreadcrumbs></Thebreadcrumbs>
-    <ModeSwitcher :dark-or-empty="mode" :switch-mode="switchMode"></ModeSwitcher>
-    <div class="dark:bg-coffee">
+      <TheContainer >
+        <div :class="mode">
+    
+      <div class="dark:bg-coffee">
 
+      
     
   
- 
-  <div class="bg-emerald-200 dark:bg-emerald-900 dark:text-white" >sousuek</div>
+    <div class="bg-emerald-200 dark:bg-emerald-900 dark:text-white" >sousuek</div>
 
-  <div class="bg-blue-400 dark:bg-blue-700 dark:text-white" >hogehogehgoe</div>
-    <form action="">
+    <div class="bg-blue-400 dark:bg-blue-700 dark:text-white" >hogehogehgoe</div>
+      <form action="">
 
-      <InputText v-model="text" ></InputText>
-      <InputNum v-model="num" ></InputNum>
-      <InputTextarea v-model="text" ></InputTextarea>
-      <div>tekiduto{{ text }}</div>
-    </form>
+        <InputText v-model="text" ></InputText>
+        <InputNum v-model="num" ></InputNum>
+        <InputTextarea v-model="text" ></InputTextarea>
+        <div>tekiduto{{ text }}</div>
+      </form>
 
-    </div>
-    </TheContainer>
-  </div>
+      </div>
+      </div>
+      </TheContainer>
+  
 </template>
 
 <script setup lang="ts">
