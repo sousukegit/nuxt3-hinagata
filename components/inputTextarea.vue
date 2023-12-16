@@ -1,8 +1,8 @@
 <template>
-    <div>
-        <input type="text" v-model="modelValue" class="border-2 ">
-    </div>
 
+    <div>
+        <textarea v-model="modelValue" class="border-2 h-32"></textarea>
+    </div>
 
 </template>
 

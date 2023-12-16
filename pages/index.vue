@@ -1,38 +1,28 @@
 <template>
-   <div :class="mode">
-  <ModeSwitcher :dark-or-empty="mode" :switch-mode="switchMode"></ModeSwitcher>
+      <TheContainer >
+        <AppJumbotron><h1>私のポートフォリオ</h1></AppJumbotron>
+        <div class="grid grid-cols-1 sm:grid-cols-2">
+          <div>
+            <AppH2>このサイトについて</AppH2>
+            <p>このサイトは私のポートフォリオです。</p>
+            <p>NuxtとTailwindで作成しています。</p>
+          </div>
+          <div class="">
+            <AppH2>メニュー</AppH2>
+            <AppLink :href="a">プロフィール</AppLink>
+            <AppLink :href="a">作品</AppLink>
+          </div>
+
+        </div>
+
+    
+      </TheContainer>
   
- 
-  <div class="bg-emerald-200 dark:bg-emerald-900 dark:text-white" >sousuek</div>
-
-  <div class="bg-blue-400 dark:bg-red-600">hogehogehgoe</div>
-<form action="">
-
-  <InputText v-model="text"></InputText>
-  
-
-  <div>レシピ名</div>
-  <input type="text" class="border-2"/>
-  <div>材料</div>
-  <input type="text" class="border-2"/>
-
-</form>
-
-    </div>
-
-
 </template>
 
 <script setup lang="ts">
-//ダークかライトか切り替え用のrefを用意
-const mode = useCookie("mode",{maxAge:60*60*24*365,})
-const switchMode = () =>{
-  mode.value =mode.value? "" :"dark";
-  
-}
-const text =ref("")
 
- 
+
 
 
 </script>
